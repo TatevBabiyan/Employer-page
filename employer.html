@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer</title>
+    <link rel="stylesheet" href="employer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <div class="topnav" id="myTopnav">
+        <a href="#Home">Home</a>
+        <a href="#Companies">Companies</a>
+        <a href="#Trainings">Trainings</a>
+        <a href="#Blog">Blog</a>
+        <a href="#CV">CV</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Jobs">Jobs</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--header-end-->
+
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-pic">
+                <img src="Images/images.png" alt="employer avatar">
+            </div>
+            <div class="profile-details">
+                <div class="intro">
+                    <h2>Company Name</h2>
+                    <button id="edit-profile-pic" class="edit-button">Edit Profile Picture</button>
+                    <button id="change-company-name" class="edit-button">Change Company Name</button>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f" style="color:var(--blue)"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color:var(--skyblue)"></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color:var(--dark-pink)"></i></a>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="row">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="content">
+                            <span>Phone</span>
+                            <h5>+374 99-99-99</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="icon">
+                            <i class="far fa-envelope-open"></i>
+                        </div>
+                        <div class="content">
+                            <span>E-Mail</span>
+                            <h5>company@mail.ru</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="content">
+                            <span>Location</span>
+                            <h5>Yerevan, Azatutyun 12/12</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="linked-btn"><a href="#">To Company's Webpage</a></button>
+            </div>
+        </div>
+
+    <!----------------About Section ------------------->
+        <div class="secondary-sections">
+            <div class="about editable-section">
+                <h1>About Company</h1>
+                <p class="content" contenteditable="true">A job description is a document that clearly states essential job requirements, job duties, job responsibilities, and skills required to perform a specific role. A detailed job description will cover how success is measured in the role so it can be used in performance evaluations.</p>
+                <button id="change-about" class="change-about">Edit</button>
+                <button class="delete-button">Delete</button>
+            </div>
+
+            <div class="posted_jobs editable-section">
+                <h1>Active Jobs</h1>
+                <h2>5 Jobs</h2>
+                <div class="slider-container">
+                    <div class="slides">
+                    </div>
+                </div>
+                <button class="prev-arrow">Prev</button>
+                <button class="next-arrow">Next</button>
+            </div>
+
+            <div class="benefits editable-section">
+                <h1>Benefits</h1>
+                <ul class="content" contenteditable="true">
+                    <li>ANNUAL BONUS</li>
+                    <li>ANNUAL SALARY REVIEW</li>
+                    <li>FREE LANGUAGE COURSES</li>
+                    <li>TRAINING PROGRAM ABROAD</li>
+                    <li>FLEXIBLE WORKING SCHEDULE</li>
+                    <li>SPORT PACKAGE</li>
+                    <li>PARENTAL LEAVE</li>
+                </ul>
+                <button id="change-benefit" class="change-benefit">Edit</button>
+                <button class="delete-button">Delete</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="employer.js"></script>
+
+
+
+    <!--footer-->
+    <div class="contain">
+    </div>
+    <footer>
+      <div class="contain">
+        <div class="footer_content">
+          <div class="first_section">
+            <h3 class="footer_headings">About Us</h3>
+            <img src="images/logo-1.png" alt="" />
+            <p>
+              A job portal is a website where people who need jobs can find jobs and companies looking for job seekers can find the perfect employees. It serves as a medium where job seekers can create profiles, upload resumes, and search for job openings across various industries and locations.
+            </p>
+            <div class="social_icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+
+          <div class="second_section">
+            <h3 class="footer_headings">Useful links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Companies</a></li>
+              <li><a href="#">Trainings</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="third_section">
+            <h3 class="footer_headings">Address</h3>
+            <ul>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <span>relab@gmail.com</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Azatutyun 23/24</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+374 99 99-99-99</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="fourth_section">
+            <h3 class="footer_headings">Newsletter</h3>
+            <p>Subscribing to the right email newsletter can deliver the information you need. Done well, an email newsletter with a purpose is like a trusted source helping you cut through the clutter.</p>
+            <form action="#">
+              <div class="form_control">
+                <input type="text" placeholder="Enter an Email" required />
+              </div>
+              <button type="button">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_txt">
+        <p>
+          All rights reservered by
+          <a href="https://www.onlineittuts.com">RELAB</a> &copy; 2024.
+        </p>
+      </div>
+    </footer>
+
+    <!--footer-end-->
+
+    <script src="job.js"></script>
+
+
+</body>
+</html>
